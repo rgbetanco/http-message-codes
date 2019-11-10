@@ -60,6 +60,9 @@ module.exports = {
     },
     OS_MOVE_FILE: function (object) {
         return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.OS_MOVE_FILE, object)
+    },
+    UNKNOWN_FUNCTION_NAME: function (object) {
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.UNKNOWN_FUNCTION_NAME, object)
     }
 };
 

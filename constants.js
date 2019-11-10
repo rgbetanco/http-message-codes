@@ -58,7 +58,10 @@ const CONNECTION_ERROR = 0;
 const CA_ERROR = 1;
 const SERVICE_CONNECTION_ERROR = { r: SERVICE + CONNECTION_ERROR, m: "Error connecting to service" }
 const SERVICE_CA_ERROR = { r: SERVICE + CA_ERROR, m: "Certificate authority error" }
-
+// UNKNOWN
+const UNKNOWN = 2048;
+const FUNCTION_NAME = 0
+const UNKNOWN_FUNCTION_NAME = {  r: UNKNOWN + FUNCTION_NAME, m: "Unknown function, this issue will be reported" }
 module.exports = {
     HTTP_CODES: HTTP_CODES,
     SUCCESS: SUCCESS,
@@ -81,4 +84,5 @@ module.exports = {
     SERVICE_CONNECTION_ERROR: SERVICE_CONNECTION_ERROR,
     SERVICE_CA_ERROR: SERVICE_CA_ERROR,
     OS_MOVE_FILE: OS_MOVE_FILE,
+    UNKNOWN_FUNCTION_NAME: UNKNOWN_FUNCTION_NAME
 }

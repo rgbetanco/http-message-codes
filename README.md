@@ -14,6 +14,11 @@ console.log(result);
 # HTTP CUSTOM ERROR CODES / MESSAGE
 #### All functions ( SUCCESS, DB_ERROR_GET, etc) accept one optional parameter.
 
+### v 1.1.4
+
+UNKNOWN_FUNCTION_NAME
+> The function the API is trying to access is known to one of the services
+
 ### v 1.1.3
 
 TOKEN_ERROR_EXPIRED
