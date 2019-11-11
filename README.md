@@ -14,6 +14,10 @@ console.log(result);
 # HTTP CUSTOM ERROR CODES / MESSAGE
 #### All functions ( SUCCESS, DB_ERROR_GET, etc) accept one optional parameter.
 
+### v 1.1.5
+DB_ERROR_WRONG_STATUS
+> The record is disabled, inactive or unknown status
+
 ### v 1.1.4
 
 UNKNOWN_FUNCTION_NAME

@@ -14,10 +14,12 @@ const GET = 0;
 const CREATE = 1;
 const UPDATE = 2;
 const NOT_FOUND = 4;
+const WRONG_STATUS = 8;
 const DB_ERROR_GET = { r: DB_ERROR + GET, m: "Error while getting data from the database" }
 const DB_ERROR_CREATE = { r: DB_ERROR + CREATE, m: "Error while posting data to the database" }
 const DB_ERROR_UPDATE = { r: DB_ERROR + UPDATE, m: "Error while putting data to the database" }
-const DB_ERROR_NOT_FOUND = { r: DB_ERROR + NOT_FOUND, m: "Record expected but nothing found on database"}
+const DB_ERROR_NOT_FOUND = { r: DB_ERROR + NOT_FOUND, m: "Record expected but nothing found on database" }
+const DB_ERROR_WRONG_STATUS = { r: DB_ERROR + WRONG_STATUS, m: "Record not active, disabled or unknown status"}
 // PARAMETERS
 const PARAMETER_ERROR = 32;
 const REQUIRED = 0;
@@ -69,6 +71,7 @@ module.exports = {
     DB_ERROR_CREATE: DB_ERROR_CREATE,
     DB_ERROR_UPDATE: DB_ERROR_UPDATE,
     DB_ERROR_NOT_FOUND,
+    DB_ERROR_WRONG_STATUS: DB_ERROR_WRONG_STATUS,
     PARAMETER_REQUIRED: PARAMETER_REQUIRED,
     PARAMETER_JSON_FORMAT: PARAMETER_JSON_FORMAT,
     PARAMETER_EMAIL_FORMAT: PARAMETER_EMAIL_FORMAT,
