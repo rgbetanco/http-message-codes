@@ -15,6 +15,9 @@ console.log(result);
 # HTTP CUSTOM ERROR CODES / MESSAGE
 #### All functions ( SUCCESS, DB_ERROR_GET, etc) accept one optional parameter.
 
+### v 1.1.7
+> Missing the success in Chinese - bug
+
 ### v 1.1.6
 > Add languages: en ( English ) & cz ( Traditional Chinese, default )
 
