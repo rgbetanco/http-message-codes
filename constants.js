@@ -7,7 +7,7 @@ const HTTP_CODES = {
     UNPROCESSABLE_ENTITY: 422,
 }
 // SUCCESS
-const SUCCESS = { r: 0, m: "Success" }
+const SUCCESS = { r: 0, m: "Success", m_cz: "成功" }
 // DATABASE
 const DB_ERROR = 16;
 const GET = 0;
