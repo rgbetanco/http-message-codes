@@ -6,13 +6,17 @@ npm install http-message-codes
 ```javascript
 const error = require("http-message-codes");
 // parameter could be any object (json), string or number
-const { status, result } = error.SUCCESS(parameter);
+let lang = 'en'                 // -Optional, supported languages en ( English ), cz ( Traditional Chinese ) - default language cz
+const { status, result } = error.SUCCESS(parameter, lang);
 res.status(status).json(result);
 console.log(status);
 console.log(result);
 ```
 # HTTP CUSTOM ERROR CODES / MESSAGE
 #### All functions ( SUCCESS, DB_ERROR_GET, etc) accept one optional parameter.
+
+### v 1.1.6
+> Add languages: en ( English ) & cz ( Traditional Chinese, default )
 
 ### v 1.1.5
 DB_ERROR_WRONG_STATUS
