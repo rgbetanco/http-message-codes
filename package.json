@@ -1,6 +1,6 @@
 {
   "name": "http-message-codes",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "success/error http codes",
   "main": "index.js",
   "scripts": {
