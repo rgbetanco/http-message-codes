@@ -18,20 +18,28 @@ console.log(result);
 ### v 1.1.8
 PARAMETER_CASH_OR_POINT
 >Error trading, order must be paid all in cash or all in points,只能選擇現金或點數交易
+
 PARAMETER_CASH
 >Parameter cash is not enough to pay the order, 現金不足
+
 SERVICE_FIREBASE
 >Error connecting to service,服務連結錯誤
+
 BLOCKCHAIN_POINT_INITIALIZE
 >Error initializing user's point (asset),初始化使用者點數失敗
+
 BLOCKCHAIN_POINT_INCREMENT
 >Error increasing admin points,初始化使用者點數失敗
+
 BLOCKCHAIN_POINT_TRANSFER
 >Error transferring points,新增使用者點數失敗
+
 BLOCKCHAIN_CREATE_TRANSACTION_PROPOSAL
 >Error while creating transaction proposal,新增未簽名的交易提案失敗
+
 BLOCKCHAIN_COMMIT_TRANSACTION_PROPOSAL
 >Error while committing transaction proposal to the blockchain,提交簽名的交易提案失敗
+
 BLOCKCHAIN_COMMIT_TRANSACTION
 >Error while committing the transaction to the blockchain,傳送簽名的交易失敗
 

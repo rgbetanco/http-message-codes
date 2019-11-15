@@ -63,6 +63,33 @@ module.exports = {
     },
     UNKNOWN_FUNCTION_NAME: function (object, lang = 'cz') {
         return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.UNKNOWN_FUNCTION_NAME, object, lang)
+    },
+    PARAMETER_CASH_OR_POINT: function (object, lang = 'cz'){
+        return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.PARAMETER_CASH_OR_POINT, object, lang)
+    },
+    PARAMETER_CASH: function (object, lang = 'cz'){
+        return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.PARAMETER_CASH, object, lang)
+    },
+    SERVICE_FIREBASE: function (object, lang = 'cz'){
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.SERVICE_FIREBASE, object, lang)
+    },
+    BLOCKCHAIN_POINT_INITIALIZE: function (object, lang = 'cz'){
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_POINT_INITIALIZE , object, lang)
+    },
+    BLOCKCHAIN_POINT_INCREMENT: function (object, lang = 'cz'){
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_POINT_INCREMENT , object, lang)
+    },
+    BLOCKCHAIN_POINT_TRANSFER: function (object, lang = 'cz'){
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_POINT_TRANSFER , object, lang)
+    },
+    BLOCKCHAIN_CREATE_TRANSACTION_PROPOSAL: function (object, lang = 'cz'){
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_CREATE_TRANSACTION_PROPOSAL , object, lang)
+    },
+    BLOCKCHAIN_COMMIT_TRANSACTION_PROPOSAL: function (object, lang = 'cz'){
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_COMMIT_TRANSACTION_PROPOSAL , object, lang)
+    },
+    BLOCKCHAIN_COMMIT_TRANSACTION: function (object, lang = 'cz'){
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_COMMIT_TRANSACTION , object, lang)
     }
 };
 
