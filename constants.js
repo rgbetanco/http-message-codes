@@ -31,9 +31,11 @@ const FILE_TYPE_UPLOADED = 16;
 const INVALID = 32;
 const CASH_OR_POINT = 64
 const CASH = 128
+const FILE_SIZE = 256
 const PARAMETER_REQUIRED = { r: PARAMETER_ERROR + REQUIRED, m: "Error while processing required parameter", m_cz: "處理必要參數時錯誤" }
 const PARAMETER_JSON_FORMAT = { r: PARAMETER_ERROR + JSON_FORMAT, m: "Error while processing json formatted parameter", m_cz: "處理Json格式的參數時錯誤" }
 const PARAMETER_FILE_NOT_UPLOADED = { r: PARAMETER_ERROR + FILE_NOT_UPLOADED, m: "File was not uploaded", m_cz: "檔案並未上傳" }
+const PARAMETER_FILE_SIZE = { r: PARAMETER_ERROR + FILE_SIZE, m: "File size is too big", m_cz: "打案太大" }
 const PARAMETER_FILE_TYPE_UPLOADED = { r: PARAMETER_ERROR + FILE_TYPE_UPLOADED, m: "File type not supported", m_cz: "檔案類型未支援" }
 const PARAMETER_EMAIL_FORMAT = { r: PARAMETER_ERROR + EMAIL_FORMAT, m: "Wrong email format", m_cz: "錯誤的電子信箱格式" }
 const PARAMETER_UNSUPPORTED_FORMAT = { r: PARAMETER_ERROR + UNSUPPORTED_FORMAT, m: "Unknown or unsupported parameter format", m_cz: "未知的或未支援的參數格式" }
@@ -100,6 +102,7 @@ module.exports = {
     TOKEN_ERROR_EXPIRED: TOKEN_ERROR_EXPIRED,
     PARAMETER_FILE_NOT_UPLOADED: PARAMETER_FILE_NOT_UPLOADED,
     PARAMETER_FILE_TYPE_UPLOADED: PARAMETER_FILE_TYPE_UPLOADED,
+    PARAMETER_FILE_SIZE: PARAMETER_FILE_SIZE,
     PARAMETER_INVALID: PARAMETER_INVALID,
     AUTHENTICATION_USERNAME_IN_USED: AUTHENTICATION_USERNAME_IN_USED,
     AUTHENTICATION_ACCESS_DENIED: AUTHENTICATION_ACCESS_DENIED,

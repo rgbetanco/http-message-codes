@@ -43,6 +43,9 @@ module.exports = {
     FILE_TYPE_NOT_SUPPORTED: function (object, lang = 'cz') {
         return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.PARAMETER_FILE_TYPE_UPLOADED, object, lang)
     },
+    FILE_TOO_BIG: function (object, lang = 'cz') {
+      return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.PARAMETER_FILE_SIZE, object, lang)  
+    },
     AUTHENTICATION_USERNAME_IN_USED: function (object, lang = 'cz') {
         return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.AUTHENTICATION_USERNAME_IN_USED, object, lang)
     },

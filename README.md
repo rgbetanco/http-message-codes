@@ -15,6 +15,10 @@ console.log(result);
 # HTTP CUSTOM ERROR CODES / MESSAGE
 #### All functions ( SUCCESS, DB_ERROR_GET, etc) accept one optional parameter.
 
+### v 1.2.0
+FILE_TO_BIG
+>File size is too big, 打案太大
+
 ### v 1.1.9
 >Bug fixed
 
