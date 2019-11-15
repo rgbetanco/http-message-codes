@@ -15,6 +15,9 @@ console.log(result);
 # HTTP CUSTOM ERROR CODES / MESSAGE
 #### All functions ( SUCCESS, DB_ERROR_GET, etc) accept one optional parameter.
 
+### v 1.1.9
+>Bug fixed
+
 ### v 1.1.8
 PARAMETER_CASH_OR_POINT
 >Error trading, order must be paid all in cash or all in points,只能選擇現金或點數交易
