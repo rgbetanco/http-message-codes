@@ -32,6 +32,8 @@ const INVALID = 32;
 const CASH_OR_POINT = 64
 const CASH = 128
 const FILE_SIZE = 256
+const NOT_ENOUGH_POINTS = 1024
+const ONLY_ONE_ALLOWED = 2048
 const PARAMETER_REQUIRED = { r: PARAMETER_ERROR + REQUIRED, m: "Error while processing required parameter", m_cz: "處理必要參數時錯誤" }
 const PARAMETER_JSON_FORMAT = { r: PARAMETER_ERROR + JSON_FORMAT, m: "Error while processing json formatted parameter", m_cz: "處理Json格式的參數時錯誤" }
 const PARAMETER_FILE_NOT_UPLOADED = { r: PARAMETER_ERROR + FILE_NOT_UPLOADED, m: "File was not uploaded", m_cz: "檔案並未上傳" }
@@ -41,7 +43,9 @@ const PARAMETER_EMAIL_FORMAT = { r: PARAMETER_ERROR + EMAIL_FORMAT, m: "Wrong em
 const PARAMETER_UNSUPPORTED_FORMAT = { r: PARAMETER_ERROR + UNSUPPORTED_FORMAT, m: "Unknown or unsupported parameter format", m_cz: "未知的或未支援的參數格式" }
 const PARAMETER_INVALID = { r: PARAMETER_ERROR + INVALID, m: "Parameter value is invalid", m_cz: "參數值無效" }
 const PARAMETER_CASH_OR_POINT = { r: PARAMETER_ERROR + CASH_OR_POINT, m: "Error trading, order must be paid all in cash or all in points", m_cz: "只能選擇現金或點數交易" }
-const PARAMETER_CASH = { r: PARAMETER_ERROR + CASH, m: "Parameter cash is not enough to pay the order" , m_cz: "現金不足" }
+const PARAMETER_CASH = { r: PARAMETER_ERROR + CASH, m: "Parameter cash is not enough to pay the order", m_cz: "現金不足" }
+const PARAMETER_NOT_ENOUGH_POINTS = { r: PARAMETER_ERROR + NOT_ENOUGH_POINTS, m: "User does not have enough points to pay the order", m_cz: "點數不足" }
+const PARAMETER_ONLY_ONE_ALLOWED = { r: PARAMETER_ERROR + ONLY_ONE_ALLOWED, m: "Only receiver or sender can be defined, not both", m_cz: "參數from和to只能輸入一個" }
 // TOKEN
 const TOKEN_ERROR = 64;
 const TOKEN_INVALID = 0;
@@ -119,5 +123,7 @@ module.exports = {
     BLOCKCHAIN_POINT_TRANSFER: BLOCKCHAIN_POINT_TRANSFER,
     BLOCKCHAIN_CREATE_TRANSACTION_PROPOSAL: BLOCKCHAIN_CREATE_TRANSACTION_PROPOSAL,
     BLOCKCHAIN_COMMIT_TRANSACTION_PROPOSAL: BLOCKCHAIN_COMMIT_TRANSACTION_PROPOSAL,
-    BLOCKCHAIN_COMMIT_TRANSACTION: BLOCKCHAIN_COMMIT_TRANSACTION
+    BLOCKCHAIN_COMMIT_TRANSACTION: BLOCKCHAIN_COMMIT_TRANSACTION,
+    PARAMETER_NOT_ENOUGH_POINTS: PARAMETER_NOT_ENOUGH_POINTS,
+    PARAMETER_ONLY_ONE_ALLOWED: PARAMETER_ONLY_ONE_ALLOWED
 }

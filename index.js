@@ -44,7 +44,7 @@ module.exports = {
         return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.PARAMETER_FILE_TYPE_UPLOADED, object, lang)
     },
     FILE_TOO_BIG: function (object, lang = 'cz') {
-      return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.PARAMETER_FILE_SIZE, object, lang)  
+        return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.PARAMETER_FILE_SIZE, object, lang)
     },
     AUTHENTICATION_USERNAME_IN_USED: function (object, lang = 'cz') {
         return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.AUTHENTICATION_USERNAME_IN_USED, object, lang)
@@ -67,32 +67,38 @@ module.exports = {
     UNKNOWN_FUNCTION_NAME: function (object, lang = 'cz') {
         return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.UNKNOWN_FUNCTION_NAME, object, lang)
     },
-    PARAMETER_CASH_OR_POINT: function (object, lang = 'cz'){
+    PARAMETER_CASH_OR_POINT: function (object, lang = 'cz') {
         return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.PARAMETER_CASH_OR_POINT, object, lang)
     },
-    PARAMETER_CASH: function (object, lang = 'cz'){
+    PARAMETER_CASH: function (object, lang = 'cz') {
         return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.PARAMETER_CASH, object, lang)
     },
-    SERVICE_FIREBASE: function (object, lang = 'cz'){
+    PARAMETER_NOT_ENOUGH_POINTS: function (object, lang = 'cz') {
+        return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.PARAMETER_NOT_ENOUGH_POINTS, object, lang)
+    },
+    PARAMETER_ONLY_ONE_ALLOWED: function (object, lang = 'cz') {
+        return createArray(constants.HTTP_CODES.UNPROCESSABLE_ENTITY, constants.PARAMETER_ONLY_ONE_ALLOWED, object, lang)
+    },
+    SERVICE_FIREBASE: function (object, lang = 'cz') {
         return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.SERVICE_FIREBASE, object, lang)
     },
-    BLOCKCHAIN_POINT_INITIALIZE: function (object, lang = 'cz'){
-        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_POINT_INITIALIZE , object, lang)
+    BLOCKCHAIN_POINT_INITIALIZE: function (object, lang = 'cz') {
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_POINT_INITIALIZE, object, lang)
     },
-    BLOCKCHAIN_POINT_INCREMENT: function (object, lang = 'cz'){
-        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_POINT_INCREMENT , object, lang)
+    BLOCKCHAIN_POINT_INCREMENT: function (object, lang = 'cz') {
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_POINT_INCREMENT, object, lang)
     },
-    BLOCKCHAIN_POINT_TRANSFER: function (object, lang = 'cz'){
-        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_POINT_TRANSFER , object, lang)
+    BLOCKCHAIN_POINT_TRANSFER: function (object, lang = 'cz') {
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_POINT_TRANSFER, object, lang)
     },
-    BLOCKCHAIN_CREATE_TRANSACTION_PROPOSAL: function (object, lang = 'cz'){
-        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_CREATE_TRANSACTION_PROPOSAL , object, lang)
+    BLOCKCHAIN_CREATE_TRANSACTION_PROPOSAL: function (object, lang = 'cz') {
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_CREATE_TRANSACTION_PROPOSAL, object, lang)
     },
-    BLOCKCHAIN_COMMIT_TRANSACTION_PROPOSAL: function (object, lang = 'cz'){
-        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_COMMIT_TRANSACTION_PROPOSAL , object, lang)
+    BLOCKCHAIN_COMMIT_TRANSACTION_PROPOSAL: function (object, lang = 'cz') {
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_COMMIT_TRANSACTION_PROPOSAL, object, lang)
     },
-    BLOCKCHAIN_COMMIT_TRANSACTION: function (object, lang = 'cz'){
-        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_COMMIT_TRANSACTION , object, lang)
+    BLOCKCHAIN_COMMIT_TRANSACTION: function (object, lang = 'cz') {
+        return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.BLOCKCHAIN_COMMIT_TRANSACTION, object, lang)
     }
 };
 
@@ -101,10 +107,10 @@ function createArray(status, code, object, lang) {
     if (lang == 'cz') {
         message = code.m_cz
     }
-    let a = {'r':code.r, 'm':message };
+    let a = { 'r': code.r, 'm': message };
     if (object) {
-        a = {'r':code.r, 'm':message, 'd':object};
+        a = { 'r': code.r, 'm': message, 'd': object };
     }
-    
+
     return { status: status, result: a };
 }

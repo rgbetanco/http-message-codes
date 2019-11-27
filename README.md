@@ -15,6 +15,13 @@ console.log(result);
 # HTTP CUSTOM ERROR CODES / MESSAGE
 #### All functions ( SUCCESS, DB_ERROR_GET, etc) accept one optional parameter.
 
+### v 1.2.1
+> Not enough points to pay the order
+PARAMETER_NOT_ENOUGH_POINTS
+
+Can only define from or to, not both
+>PARAMETER_ONLY_ONE_ALLOWED
+
 ### v 1.2.0
 FILE_TO_BIG
 >File size is too big, 打案太大
