@@ -15,6 +15,10 @@ console.log(result);
 # HTTP CUSTOM ERROR CODES / MESSAGE
 #### All functions ( SUCCESS, DB_ERROR_GET, etc) accept one optional parameter.
 
+### v 1.2.2
+> Account password has expired and need to be reset - 密碼過期
+AUTHENTICATION_ACCOUNT_PASSWORD_EXPIRED
+
 ### v 1.2.1
 > Not enough points to pay the order
 PARAMETER_NOT_ENOUGH_POINTS
