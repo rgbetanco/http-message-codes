@@ -15,6 +15,18 @@ console.log(result);
 # HTTP CUSTOM ERROR CODES / MESSAGE
 #### All functions ( SUCCESS, DB_ERROR_GET, etc) accept one optional parameter.
 
+### ERROR CODE TABLE
+
+code|message (Chinese)|messge (English)
+|---|---|---|
+|0|成功|Success
+|16|資料取得錯誤|Error while getting data from the database|
+|16|資料新增錯誤|Error while posting data to the database|
+
+### v 1.2.3
+> Account lock for a period of time - 登入錯誤, 鎖定中
+AUTHENTICATION_ACCOUNT_LOCKED
+
 ### v 1.2.2
 > Account password has expired and need to be reset - 密碼過期
 AUTHENTICATION_ACCOUNT_PASSWORD_EXPIRED

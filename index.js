@@ -56,7 +56,10 @@ module.exports = {
         return createArray(constants.HTTP_CODES.UNAUTHORIZED, constants.AUTHENTICATION_ALREADY_LOGIN, object, lang)
     },
     AUTHENTICATION_ACCOUNT_PASSWORD_EXPIRED: function (object, lang = 'cz') {
-        return createArray(constants.HTTP_CODES.UNAUTHORIZED, constants.AUTHENTICATION_ACCOUNT_PASSWORD_EXPIRED, object, lang)  
+        return createArray(constants.HTTP_CODES.UNAUTHORIZED, constants.AUTHENTICATION_ACCOUNT_PASSWORD_EXPIRED, object, lang)
+    },
+    AUTHENTICATION_ACCOUNT_LOCKED: function (object, lang = 'cz') {
+        return createArray(constants.HTTP_CODES.UNAUTHORIZED, constants.AUTHENTICATION_ACCOUNT_LOCKED, object, lang)
     },
     SERVICE_CONNECTION_ERROR: function (object, lang = 'cz') {
         return createArray(constants.HTTP_CODES.INTERNAL_SERVER_ERROR, constants.SERVICE_CONNECTION_ERROR, object, lang)
