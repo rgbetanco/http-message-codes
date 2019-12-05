@@ -56,6 +56,8 @@ console.log(result);
 | 4104     | 提交簽名的交易提案失敗         | Error while committing transaction proposal to the blockchain         |
 | 4112     | 傳送簽名的交易失敗             | Error while committing the transaction to the blockchain              |
 
+### v 1.2.4
+> Error code table, bug fixes
 
 ### v 1.2.3
 > Account lock for a period of time - 登入錯誤, 鎖定中
