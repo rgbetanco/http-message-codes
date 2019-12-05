@@ -17,11 +17,45 @@ console.log(result);
 
 ### ERROR CODE TABLE
 
-code|message (Chinese)|messge (English)
-|---|---|---|
-|0|成功|Success
-|16|資料取得錯誤|Error while getting data from the database|
-|16|資料新增錯誤|Error while posting data to the database|
+| **code** | **message (Chinese)**          | **messge (English)**                                                  |
+|----------|--------------------------------|-----------------------------------------------------------------------|
+| 0        | 成功                           | Success                                                               |
+| 16       | 資料取得錯誤                   | Error while getting data from the database                            |
+| 17       | 資料新增錯誤                   | Error while posting data to the database                              |
+| 18       | 資料修改錯誤                   | Error while putting data to the database                              |
+| 20       | 預期紀錄未在資料庫找到         | Record expected but nothing found on database                         |
+| 24       | 紀錄未啟用、無效或未支的狀態   | Record not active, disabled or unknown status                         |
+| 32       | 處理必要參數時錯誤             | Error while processing required parameter                             |
+| 33       | 處理Json格式的參數時錯誤       | Error while processing json formatted parameter                       |
+| 34       | 錯誤的電子信箱格式             | Wrong email format                                                    |
+| 36       | 未知的或未支援的參數格式       | Unknown or unsupported parameter format                               |
+| 40       | 檔案並未上傳                   | File was not uploaded                                                 |
+| 48       | 檔案類型未支援                 | File type not supported                                               |
+| 64       | 參數值無效                     | Parameter value is invalid                                            |
+| 65       | Token無效                      | Token is invalid                                                      |
+| 66       | Token已過期                    | Token has expired                                                     |
+| 96       | 只能選擇現金或點數交易         | Error trading, order must be paid all in cash or all in points        |
+| 128      | 移動檔案錯誤                   | Error moving file                                                     |
+| 160      | 現金不足                       | Parameter cash is not enough to pay the order                         |
+| 256      | 使用者名稱已被使用             | Username already in used                                              |
+| 257      | 拒絕訪問                       | Access denied                                                         |
+| 258      | 使用者已登入                   | User has already login                                                |
+| 260      | 密碼過期                       | Account password has expired and need to be reset                     |
+| 264      | 登入錯誤, 鎖定中               | Account lock for a period of time                                     |
+| 288      | 檔案太大                       | File size is too big                                                  |
+| 1024     | 服務連結錯誤                   | Error connecting to service                                           |
+| 1025     | 憑證授權錯誤                   | Certificate authority error                                           |
+| 1026     | Google firebase 雲訊息傳送失敗 | Error sending message through Google firebase cloud messaging service |
+| 1056     | 點數不足                       | User does not have enough points to pay the order                     |
+| 2048     | 未知的功能，此問題將會回報     | Unknown function, this issue will be reported                         |
+| 2080     | 參數from和to只能輸入一個       | Only receiver or sender can be defined, not both                      |
+| 4096     | 初始化使用者點數失敗           | Error initializing user's point (asset)                               |
+| 4097     | 新增管理員點數失敗             | Error increasing admin points                                         |
+| 4098     | 新增使用者點數失敗             | Error transferring points                                             |
+| 4100     | 新增未簽名的交易提案失敗       | Error while creating transaction proposal                             |
+| 4104     | 提交簽名的交易提案失敗         | Error while committing transaction proposal to the blockchain         |
+| 4112     | 傳送簽名的交易失敗             | Error while committing the transaction to the blockchain              |
+
 
 ### v 1.2.3
 > Account lock for a period of time - 登入錯誤, 鎖定中
